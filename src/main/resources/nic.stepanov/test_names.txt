@@ -1,0 +1,4 @@
+Test1 nic.stepanov.tests.Test1
+Test2 nic.stepanov.tests.Test2
+Test3 nic.stepanov.tests.Test3
+TestFailure nic.stepanov.tests.TestFailureExample
