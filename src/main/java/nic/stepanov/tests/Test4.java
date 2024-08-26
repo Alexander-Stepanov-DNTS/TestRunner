@@ -12,17 +12,13 @@ import javax.swing.JOptionPane;
 import static org.junit.platform.engine.discovery.DiscoverySelectors.selectMethod;
 import static org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder.request;
 
-public class Test2 implements ITest {
+public class Test4 implements ITest {
 
     @Override
     public void runTest(boolean manyTests) throws TestFailedException {
-        if (!manyTests) {
-            showMessage("Запуск теста \"Запуск дихотомии\"");
-        }
-        runJUnitTest("nic.stepanov.probl.DichotomyCalculatorTest", "testPerformDichotomy");
-        if (!manyTests) {
-            showMessage("Тестирование \"Запуск дихотомии\" прошло успешно ");
-        }
+        if (!manyTests) { showMessage("Запуск теста \"Нахождение границы В\""); }
+        runJUnitTest("nic.stepanov.probl.DichotomyCalculatorTest", "testUpdateBoundaryB");
+        if (!manyTests) { showMessage("Тестирование \"Нахождение границы В\" прошло успешно "); }
     }
 
     public void showMessage(String message) {

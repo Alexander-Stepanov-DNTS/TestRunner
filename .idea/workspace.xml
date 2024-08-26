@@ -5,30 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="774fab45-94c7-482d-99ca-fca0688c4118" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/exceptions/TestFailedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/models/DataPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/models/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/ITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/TestFailureExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/utils/TestLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestMenuBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/dialogForms/TestInputDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/nic.stepanov/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/nic.stepanov/test_names.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/nic/stepanov/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/models/DataPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/models/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/ITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/ITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/TestFailureExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/utils/TestLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/utils/TestLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/nic.stepanov/test_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/nic.stepanov/test_names.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nic/stepanov/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nic/stepanov/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +44,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2lBt998xpfLJWJTGIQaKrRcu9Gt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,14 +62,51 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/user_Alexander/IdeaProjects/TestRunner/src/test/java",
+    "last_opened_file_path": "C:/Users/user_Alexander/IdeaProjects/TestRunner/src/test/java/nic/stepanov/tests",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user_Alexander\IdeaProjects\TestRunner\src\test\java\nic\stepanov\tests" />
+      <recent name="C:\Users\user_Alexander\IdeaProjects\TestRunner\src\main\java\nic\stepanov\tests" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user_Alexander\IdeaProjects\TestRunner\src\main\resources\nic.stepanov" />
       <recent name="C:\Users\user_Alexander\IdeaProjects\TestRunner\src\main\resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="nic.stepanov.tests" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nic.stepanov.tests" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DichotomyCalculatorTest.testInitialSetup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestRunner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nic.stepanov.probl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nic.stepanov.probl" />
+      <option name="MAIN_CLASS_NAME" value="nic.stepanov.probl.DichotomyCalculatorTest" />
+      <option name="METHOD_NAME" value="testInitialSetup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DichotomyCalculatorTest.testInitialSetup" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,8 +116,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724237799046</updated>
-      <workItem from="1724237804993" duration="17768000" />
+      <workItem from="1724237804993" duration="18527000" />
+      <workItem from="1724665149369" duration="223000" />
+      <workItem from="1724665408825" duration="55000" />
+      <workItem from="1724665486423" duration="189000" />
+      <workItem from="1724665704773" duration="13361000" />
+      <workItem from="1724685878043" duration="4879000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1724267286768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724267286768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

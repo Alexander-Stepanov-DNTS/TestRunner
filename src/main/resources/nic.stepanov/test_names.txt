@@ -1,4 +1,5 @@
-Test1 nic.stepanov.tests.Test1
-Test2 nic.stepanov.tests.Test2
-Test3 nic.stepanov.tests.Test3
-TestFailure nic.stepanov.tests.TestFailureExample
+Установка_и_инициализация nic.stepanov.tests.Test1
+Запуск_дихотомии nic.stepanov.tests.Test2
+Нахождение_границы_A nic.stepanov.tests.Test3
+Нахождение_границы_В nic.stepanov.tests.Test4
+Проверка_достижения_точности nic.stepanov.tests.Test5

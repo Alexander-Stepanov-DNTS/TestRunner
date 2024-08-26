@@ -1,16 +1,11 @@
 package nic.stepanov.view;
 
 import nic.stepanov.exceptions.TestFailedException;
-import nic.stepanov.models.DataPoint;
-import nic.stepanov.models.Result;
 import nic.stepanov.utils.TestLoader;
 import nic.stepanov.view.components.TestMenuBar;
 import nic.stepanov.view.components.TestTable;
 import nic.stepanov.view.dialogForms.TestInputDialog;
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartPanel;
-import org.jfree.chart.JFreeChart;
-import org.jfree.data.category.DefaultCategoryDataset;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -47,7 +42,7 @@ public class TestRunner extends JFrame {
     private void runAllTests() {
         List<String> testNames = testLoader.getTestNames();
         for (String testName : testNames) {
-            runTest(testName);
+            executeTest(testName, true);
         }
     }
 
@@ -55,52 +50,28 @@ public class TestRunner extends JFrame {
         int selectedRow = testTable.getTestTable().getSelectedRow();
         if (selectedRow != -1) {
             String testName = (String) testTable.getTableModel().getValueAt(selectedRow, 1);
-            runTest(testName);
+
+            JDialog dialog = new JDialog(this, "Подтверждение", Dialog.ModalityType.MODELESS);
+            dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+
+            JOptionPane optionPane = new JOptionPane(
+                    "Вы хотите запустить тест " + testName + "?",
+                    JOptionPane.QUESTION_MESSAGE,
+                    JOptionPane.YES_NO_OPTION);
+
+            dialog.setContentPane(optionPane);
+            dialog.pack();
+            dialog.setLocationRelativeTo(this);
+
+            executeTest(testName, false);
         } else {
             JOptionPane.showMessageDialog(this, "Выберите тест для запуска.");
         }
     }
 
-    private void runTest(String testName) {
-        JDialog dialog = new JDialog(this, "Подтверждение", Dialog.ModalityType.MODELESS);
-        dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-
-        JOptionPane optionPane = new JOptionPane(
-                "Вы хотите запустить тест " + testName + "?",
-                JOptionPane.QUESTION_MESSAGE,
-                JOptionPane.YES_NO_OPTION);
-
-        dialog.setContentPane(optionPane);
-        dialog.pack();
-        dialog.setLocationRelativeTo(this);
-
-        optionPane.addPropertyChangeListener(e -> {
-            String prop = e.getPropertyName();
-
-            if (dialog.isVisible()
-                    && (e.getSource() == optionPane)
-                    && (prop.equals(JOptionPane.VALUE_PROPERTY))) {
-                dialog.setVisible(false);
-
-                int confirmation = (int) optionPane.getValue();
-                if (confirmation == JOptionPane.NO_OPTION) {
-                    return;
-                }
-
-                executeTest(testName);
-            }
-        });
-
-        dialog.setVisible(true);
-    }
-
-    private void executeTest(String testName) {
+    private void executeTest(String testName, boolean manyTests) {
         try {
-            Result result = testLoader.runTestByName(testName);
-
-            showResultChart(result);
-
-            showNonModalMessage(this);
+            testLoader.runTestByName(testName, manyTests);
 
             testTable.updateTestResultInTable(testName, "все ок!", Color.GREEN);
 
@@ -109,25 +80,6 @@ public class TestRunner extends JFrame {
 
             testTable.updateTestResultInTable(testName, "Тест провален", Color.RED);
         }
-    }
-
-    private void showResultChart(Result result) {
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        for (DataPoint point : result.getDataPoints()) {
-            dataset.addValue(Double.valueOf(point.getY()), "Test Result", Double.valueOf(point.getX()));
-        }
-
-        JFreeChart chart = ChartFactory.createLineChart(
-                "Результаты теста: " + result.getTestName(),
-                "X", "Y", dataset);
-
-        ChartPanel chartPanel = new ChartPanel(chart);
-        JFrame chartFrame = new JFrame("График результатов");
-        chartFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        chartFrame.add(chartPanel);
-        chartFrame.pack();
-        chartFrame.setLocationRelativeTo(this);
-        chartFrame.setVisible(true);
     }
 
     private void showNonModalMessage(JFrame parent) {

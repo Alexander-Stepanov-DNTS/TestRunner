@@ -1,7 +1,6 @@
 package nic.stepanov.utils;
 
 import nic.stepanov.exceptions.TestFailedException;
-import nic.stepanov.models.Result;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -36,7 +35,7 @@ public class TestLoader {
         return new ArrayList<>(testMap.keySet());
     }
 
-    public Result runTestByName(String testName) throws TestFailedException {
+    public void runTestByName(String testName, boolean manyTests) throws TestFailedException {
         String className = testMap.get(testName);
         if (className == null) {
             throw new TestFailedException("Тест не найден: " + testName);
@@ -46,10 +45,8 @@ public class TestLoader {
             Class<?> testClass = Class.forName(className);
             Object testInstance = testClass.getDeclaredConstructor().newInstance();
 
-            Method runMethod = testClass.getMethod("runTest");
-
-            return (Result) runMethod.invoke(testInstance);
-
+            Method runMethod = testClass.getMethod("runTest", boolean.class);
+            runMethod.invoke(testInstance, manyTests);
         } catch (Exception e) {
             throw new TestFailedException("Ошибка выполнения теста: " + e.getMessage(), e);
         }
