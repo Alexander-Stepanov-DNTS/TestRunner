@@ -1,77 +1,94 @@
 package nic.stepanov.probl;
 
 public class DichotomyCalculator {
-    private double a;
-    private double b;
-    private double x1;
-    private double x2;
-    private final double eps = 0.1;
+    private ResultOfDichotomy result;
+    private UpdateListener updateListener;
 
-    public void initialSetup(double initialA, double initialB) {
-        a = initialA;
-        b = initialB;
-        x1 = 0.0;
-        x2 = 0.0;
-        printIntermediateResults();
+    public void setUpdateListener(UpdateListener updateListener) {
+        this.updateListener = updateListener;
     }
 
-    public void performDichotomy() {
-        double x = (a + b) / 2;
-        x1 = x - eps / 2;
-        x2 = x + eps / 2;
+    public ResultOfDichotomy initialSetup(double initialA, double initialB, double eps) {
+        if(initialA == 0) {return null; }
+        result = new ResultOfDichotomy(initialA, initialB, 0.0, 0.0, eps);
+        notifyUpdate();
         printIntermediateResults();
+        return result;
     }
 
-    public void updateBoundaryA() {
-        if (function(x1) > function(x2)) {
-            a = x1;
+    public ResultOfDichotomy performDichotomy() {
+        double x = (result.getA() + result.getB()) / 2;
+        result.setX1(x - result.getEps() / 2);
+        result.setX2(x + result.getEps() / 2);
+        notifyUpdate();
+        printIntermediateResults();
+        return result;
+    }
+
+    public ResultOfDichotomy updateBoundaryA() {
+        if (function(result.getX1()) > function(result.getX2())) {
+            result.setA(result.getX1());
         }
+        notifyUpdate();
         printIntermediateResults();
+        return result;
     }
 
-    public void updateBoundaryB() {
-        if (function(x1) < function(x2)) {
-            b = x2;
+    public ResultOfDichotomy updateBoundaryB() {
+        if (function(result.getX1()) < function(result.getX2())) {
+            result.setB(result.getX2());
         }
+        notifyUpdate();
         printIntermediateResults();
+        return result;
     }
 
     public boolean checkConvergence() {
-        return Math.abs(a - b) <= 2 * eps + eps / 100;
+        return Math.abs(result.getA() - result.getB()) <= 2 * result.getEps() + result.getEps() / 100;
     }
 
-    private double function(double x) {
+    public double function(double x) {
         return Math.pow(x - 2.5, 2);
     }
 
+    private void notifyUpdate() {
+        if (updateListener != null) {
+            updateListener.onUpdate();
+        }
+    }
+
     public void printIntermediateResults() {
-        System.out.println("a = " + a);
-        System.out.println("x1 = " + x1);
-        System.out.println("x2 = " + x2);
-        System.out.println("b = " + b);
-        System.out.println("f(a) = " + function(a));
-        System.out.println("f(x1) = " + function(x1));
-        System.out.println("f(x2) = " + function(x2));
-        System.out.println("f(b) = " + function(b));
+        System.out.println("a = " + result.getA());
+        System.out.println("x1 = " + result.getX1());
+        System.out.println("x2 = " + result.getX2());
+        System.out.println("b = " + result.getB());
+        System.out.println("f(a) = " + function(result.getA()));
+        System.out.println("f(x1) = " + function(result.getX1()));
+        System.out.println("f(x2) = " + function(result.getX2()));
+        System.out.println("f(b) = " + function(result.getB()));
     }
 
     public double getA() {
-        return a;
+        return result.getA();
     }
 
     public double getB() {
-        return b;
+        return result.getB();
     }
 
     public double getX1() {
-        return x1;
+        return result.getX1();
     }
 
     public double getX2() {
-        return x2;
+        return result.getX2();
     }
 
     public double getEps() {
-        return eps;
+        return result.getEps();
+    }
+
+    public ResultOfDichotomy getResult() {
+        return result;
     }
 }

@@ -47,5 +47,39 @@
       <artifactId>junit-platform-engine</artifactId>
       <version>1.10.2</version>
     </dependency>
+
+    <!-- Зависимости для графиков -->
+    <dependency>
+      <groupId>tech.tablesaw</groupId>
+      <artifactId>tablesaw-jsplot</artifactId>
+      <version>0.38.2</version>
+    </dependency>
+    <dependency>
+      <groupId>tech.tablesaw</groupId>
+      <artifactId>tablesaw-core</artifactId>
+      <version>0.38.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-csv</artifactId>
+      <version>1.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.knowm.xchart</groupId>
+      <artifactId>xchart</artifactId>
+      <version>3.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.5.3</version>
+    </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>openjfx</id>
+      <url>https://maven.pkg.github.com/openjfx/javafx-maven</url>
+    </repository>
+  </repositories>
 </project>

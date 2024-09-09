@@ -5,30 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="774fab45-94c7-482d-99ca-fca0688c4118" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/ResultOfDichotomy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/UpdateListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/ITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/graph/ChartDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/graph/FunctionPlotterFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/graph/JFreeChartExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/nic.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/models/DataPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/models/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/ITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/ITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/TestFailureExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/utils/TestLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/utils/TestLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/nic.stepanov/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/nic.stepanov/test_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/nic.stepanov/test_names.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nic/stepanov/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nic/stepanov/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,19 +52,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2lBt998xpfLJWJTGIQaKrRcu9Gt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -59,14 +77,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DichotomyForm.executor": "Run",
+    "JUnit.DichotomyCalculatorTest.executor": "Run",
+    "JUnit.DichotomyCalculatorTest.testInitialSetup.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/user_Alexander/IdeaProjects/TestRunner/src/test/java",
-    "last_opened_file_path": "C:/Users/user_Alexander/IdeaProjects/TestRunner/src/test/java/nic/stepanov/tests",
+    "last_opened_file_path": "C:/Users/Alex/IdeaProjects/TestRunner",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -75,6 +102,7 @@
       <recent name="C:\Users\user_Alexander\IdeaProjects\TestRunner\src\main\java\nic\stepanov\tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\IdeaProjects\TestRunner\src\main\resources\nic.stepanov" />
       <recent name="C:\Users\user_Alexander\IdeaProjects\TestRunner\src\main\resources\nic.stepanov" />
       <recent name="C:\Users\user_Alexander\IdeaProjects\TestRunner\src\main\resources" />
     </key>
@@ -82,6 +110,7 @@
       <recent name="nic.stepanov.tests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nic.stepanov.tests2" />
       <recent name="nic.stepanov.tests" />
     </key>
   </component>
@@ -108,6 +137,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-f644763e9732-af3fa2b8" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -122,6 +158,11 @@
       <workItem from="1724665486423" duration="189000" />
       <workItem from="1724665704773" duration="13361000" />
       <workItem from="1724685878043" duration="4879000" />
+      <workItem from="1724912213528" duration="9062000" />
+      <workItem from="1725344351007" duration="6055000" />
+      <workItem from="1725484663906" duration="2624000" />
+      <workItem from="1725517243469" duration="3528000" />
+      <workItem from="1725615006342" duration="164000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1724267286768</created>

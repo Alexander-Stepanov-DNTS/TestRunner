@@ -16,7 +16,7 @@ public class DichotomyCalculatorTest {
 
     @Test
     public void testInitialSetup() {
-        calculator.initialSetup(1.0, 10.0);
+        calculator.initialSetup(1.0, 10.0, 0.3);
 
         assertEquals(1.0, calculator.getA(), 0.0001);
         assertEquals(10.0, calculator.getB(), 0.0001);
@@ -24,7 +24,7 @@ public class DichotomyCalculatorTest {
 
     @Test
     public void testPerformDichotomy() {
-        calculator.initialSetup(1.0, 10.0);
+        calculator.initialSetup(1.0, 10.0, 0.1);
         calculator.performDichotomy();
 
         assertEquals(5.45, calculator.getX1(), 0.1);
@@ -33,7 +33,7 @@ public class DichotomyCalculatorTest {
 
     @Test
     public void testUpdateBoundaryA() {
-        calculator.initialSetup(1.0, 10.0);
+        calculator.initialSetup(1.0, 10.0, 0.1);
         calculator.performDichotomy();
 
         System.out.println("f(x1) = " + calculator.getX1());
@@ -50,7 +50,7 @@ public class DichotomyCalculatorTest {
 
     @Test
     public void testUpdateBoundaryB() {
-        calculator.initialSetup(1.0, 10.0);
+        calculator.initialSetup(1.0, 10.0, 0.1);
         calculator.performDichotomy();
         calculator.updateBoundaryB();
 
@@ -59,7 +59,7 @@ public class DichotomyCalculatorTest {
 
     @Test
     public void testCheckConvergence() {
-        calculator.initialSetup(1.0, 10.0);
+        calculator.initialSetup(1.0, 10.0, 0.1);
 
         while (!calculator.checkConvergence()) {
             calculator.performDichotomy();

@@ -1,9 +1,12 @@
 package nic.stepanov.utils;
 
 import nic.stepanov.exceptions.TestFailedException;
+import nic.stepanov.probl.DichotomyCalculator;
+import nic.stepanov.tests2.ITest;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -48,6 +51,25 @@ public class TestLoader {
             Method runMethod = testClass.getMethod("runTest", boolean.class);
             runMethod.invoke(testInstance, manyTests);
         } catch (Exception e) {
+            throw new TestFailedException("Ошибка выполнения теста: " + e.getMessage(), e);
+        }
+    }
+
+    public int runTestWithCalculator(String testName, DichotomyCalculator calculator, boolean manyTests) throws TestFailedException {
+        String className = testMap.get(testName);
+        if (className == null) {
+            throw new TestFailedException("Тест не найден: " + testName);
+        }
+
+        try {
+            Class<?> testClass = Class.forName(className);
+            Object testInstance = testClass.getDeclaredConstructor().newInstance();
+
+            Method runMethod = testClass.getMethod("runTest", boolean.class, DichotomyCalculator.class);
+
+            return (int) runMethod.invoke(testInstance, manyTests, calculator);
+        } catch (Exception e) {
+            e.printStackTrace();
             throw new TestFailedException("Ошибка выполнения теста: " + e.getMessage(), e);
         }
     }
