@@ -1,8 +1,8 @@
 package nic.stepanov.view;
 
 import nic.stepanov.exceptions.TestFailedException;
-import nic.stepanov.probl.DichotomyCalculator;
-import nic.stepanov.probl.DichotomyForm;
+import nic.stepanov.dichotomy.DichotomyCalculator;
+import nic.stepanov.dichotomy.DichotomyForm;
 import nic.stepanov.utils.TestLoader;
 import nic.stepanov.view.components.TestMenuBar;
 import nic.stepanov.view.components.TestTable;

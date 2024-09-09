@@ -2,7 +2,7 @@ package nic.stepanov.tests2;
 
 
 import nic.stepanov.exceptions.TestFailedException;
-import nic.stepanov.probl.DichotomyCalculator;
+import nic.stepanov.dichotomy.DichotomyCalculator;
 
 import javax.swing.*;
 public class Test1 implements ITest {

@@ -1,4 +1,4 @@
-package nic.stepanov.probl;
+package nic.stepanov.dichotomy;
 
 public class ResultOfDichotomy {
     private double a;

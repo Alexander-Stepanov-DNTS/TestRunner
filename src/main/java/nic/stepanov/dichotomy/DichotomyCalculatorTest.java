@@ -1,4 +1,4 @@
-package nic.stepanov.probl;
+package nic.stepanov.dichotomy;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

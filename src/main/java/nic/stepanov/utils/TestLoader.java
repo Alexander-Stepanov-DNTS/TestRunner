@@ -1,12 +1,10 @@
 package nic.stepanov.utils;
 
 import nic.stepanov.exceptions.TestFailedException;
-import nic.stepanov.probl.DichotomyCalculator;
-import nic.stepanov.tests2.ITest;
+import nic.stepanov.dichotomy.DichotomyCalculator;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;

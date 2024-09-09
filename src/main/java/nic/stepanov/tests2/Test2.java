@@ -1,11 +1,9 @@
 package nic.stepanov.tests2;
 
 import nic.stepanov.exceptions.TestFailedException;
-import nic.stepanov.probl.DichotomyCalculator;
-import nic.stepanov.probl.ResultOfDichotomy;
+import nic.stepanov.dichotomy.DichotomyCalculator;
 
 import javax.swing.*;
-import java.util.Calendar;
 
 public class Test2 implements ITest {
     @Override

@@ -1,4 +1,4 @@
-package nic.stepanov.probl;
+package nic.stepanov.dichotomy;
 
 public interface UpdateListener {
     void onUpdate();

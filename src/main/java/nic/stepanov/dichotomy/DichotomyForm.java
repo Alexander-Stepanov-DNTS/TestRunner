@@ -1,4 +1,4 @@
-package nic.stepanov.probl;
+package nic.stepanov.dichotomy;
 import nic.stepanov.view.TestRunner;
 import nic.stepanov.view.graph.JFreeChartExample;
 
@@ -171,12 +171,5 @@ public class DichotomyForm extends JFrame {
 
     public DichotomyCalculator getCalculator(){
         return this.calculator;
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            DichotomyForm form = new DichotomyForm();
-            form.setVisible(true);
-        });
     }
 }
