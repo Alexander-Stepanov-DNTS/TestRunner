@@ -4,37 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="774fab45-94c7-482d-99ca-fca0688c4118" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/ResultOfDichotomy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/UpdateListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/ITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/graph/ChartDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/graph/FunctionPlotterFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/graph/JFreeChartExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/nic.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="774fab45-94c7-482d-99ca-fca0688c4118" name="Changes" comment="last changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/probl/DichotomyForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests/Test5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/utils/TestLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/utils/TestLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/view/components/TestTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/nic.stepanov/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/nic.stepanov/test_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/nic.stepanov/test_names.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/dichotomy/DichotomyCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/dichotomy/DichotomyCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/dichotomy/DichotomyForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/dichotomy/DichotomyForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/dichotomy/ResultOfDichotomy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/dichotomy/ResultOfDichotomy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nic/stepanov/tests2/Test2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +41,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -77,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Application.DichotomyForm.executor": "Run",
     "JUnit.DichotomyCalculatorTest.executor": "Run",
     "JUnit.DichotomyCalculatorTest.testInitialSetup.executor": "Run",
@@ -119,12 +98,12 @@
       <module name="TestRunner" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nic.stepanov.probl.*" />
+          <option name="PATTERN" value="nic.stepanov.dichotomy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nic.stepanov.probl" />
-      <option name="MAIN_CLASS_NAME" value="nic.stepanov.probl.DichotomyCalculatorTest" />
+      <option name="MAIN_CLASS_NAME" value="nic.stepanov.dichotomy.DichotomyCalculatorTest" />
       <option name="METHOD_NAME" value="testInitialSetup" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -163,6 +142,7 @@
       <workItem from="1725484663906" duration="2624000" />
       <workItem from="1725517243469" duration="3528000" />
       <workItem from="1725615006342" duration="164000" />
+      <workItem from="1725903994339" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1724267286768</created>
@@ -171,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724267286768</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last changes">
+      <option name="closed" value="true" />
+      <created>1725904266246</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725904266247</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +178,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="last changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="last changes" />
   </component>
 </project>

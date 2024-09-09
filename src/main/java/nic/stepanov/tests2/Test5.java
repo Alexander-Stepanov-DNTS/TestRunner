@@ -13,14 +13,13 @@ public class Test5 implements ITest {
                     "Тест \"достижение сходимости\".\n",
                     "Тест достижение сходимости",
                     JOptionPane.INFORMATION_MESSAGE);
-        }
 
-        if (!manyTests) {
             JOptionPane.showMessageDialog(null,
                     "Будет выполнена установка начального значения.\n",
                     "Установка начального значения",
                     JOptionPane.INFORMATION_MESSAGE);
         }
+
         calculator.initialSetup(1.0, 10.0, 0.1);
         if (!manyTests) {
             JOptionPane.showMessageDialog(null,
@@ -30,23 +29,19 @@ public class Test5 implements ITest {
                             "eps = " + 0.1,
                     "Инициализация дихотомии",
                     JOptionPane.INFORMATION_MESSAGE);
-        }
 
-        if (!manyTests) {
             JOptionPane.showMessageDialog(null,
                     "Сейчас будет выполнен полный цикл алгоритма дихотомии для достижения сходимости.\nАлгоритм будет выполняться до тех пор, пока интервал [A, B] не станет достаточно малым.",
                     "Выполнение дихотомии для достижения сходимости",
                     JOptionPane.INFORMATION_MESSAGE);
         }
+
         while (!calculator.checkConvergence()) {
             calculator.performDichotomy();
             calculator.updateBoundaryA();
             calculator.updateBoundaryB();
         }
 
-//        if (!calculator.checkConvergence()) {
-//            throw new TestFailedException("Ошибка: алгоритм не сошелся.");
-//        }
         if (!manyTests) {
             JOptionPane.showMessageDialog(null,
                             "Итоговые значения:\n" +

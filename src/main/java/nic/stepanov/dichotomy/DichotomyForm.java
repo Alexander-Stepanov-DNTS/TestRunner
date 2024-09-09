@@ -8,19 +8,17 @@ import java.awt.*;
 import java.util.Enumeration;
 
 public class DichotomyForm extends JFrame {
-    private JTextField fieldA;
-    private JTextField fieldB;
-    private JTextField fieldX1;
-    private JTextField fieldX2;
-    private JLabel labelFofA;
-    private JLabel labelFofX1;
-    private JLabel labelFofX2;
-    private JLabel labelFofB;
-    private JTextArea resultArea;
-    private DichotomyCalculator calculator;
-    private JLabel functionLabel;
-    private JLabel epsilonLabel;
-    private double eps = 0.3;
+    private final JTextField fieldA;
+    private final JTextField fieldB;
+    private final JTextField fieldX1;
+    private final JTextField fieldX2;
+    private final JLabel labelFofA;
+    private final JLabel labelFofX1;
+    private final JLabel labelFofX2;
+    private final JLabel labelFofB;
+    private final JTextArea resultArea;
+    private final DichotomyCalculator calculator;
+    private final double eps = 0.3;
 
     public DichotomyForm() {
         setUIFont(new FontUIResource(new Font("Dialog", Font.PLAIN, 18)));
@@ -54,28 +52,13 @@ public class DichotomyForm extends JFrame {
             frame.setVisible(true);
         });
 
-        JButton showPlotButton = new JButton("Показать график функции");
-        showPlotButton.addActionListener(e -> {
-            // Создаем окно для отображения графика
-            JFrame chartFrame = new JFrame("График функции");
-            chartFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-            // Создаем экземпляр класса JFreeChartExample
-            JFreeChartExample chartExample = new JFreeChartExample();
-
-            // Добавляем панель с графиком в окно
-            chartFrame.add(chartExample.createChartPanel());
-
-            chartFrame.pack();
-            chartFrame.setLocationRelativeTo(null);
-            chartFrame.setVisible(true);
-        });
+        JButton showPlotButton = getShowPlotButton();
 
         resultArea = new JTextArea(10, 30);
         resultArea.setEditable(false);
 
-        functionLabel = new JLabel("Функция: f(x) = (x - 2.5)^2");
-        epsilonLabel = new JLabel("Точность eps: " + eps);
+        JLabel functionLabel = new JLabel("Функция: f(x) = (x - 2.5)^2");
+        JLabel epsilonLabel = new JLabel("Точность eps: " + eps);
 
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(6, 2));
@@ -102,12 +85,32 @@ public class DichotomyForm extends JFrame {
         add(new JScrollPane(resultArea), BorderLayout.CENTER);
     }
 
+    private static JButton getShowPlotButton() {
+        JButton showPlotButton = new JButton("Показать график функции");
+        showPlotButton.addActionListener(e -> {
+            // Создаем окно для отображения графика
+            JFrame chartFrame = new JFrame("График функции");
+            chartFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+            // Создаем экземпляр класса JFreeChartExample
+            JFreeChartExample chartExample = new JFreeChartExample();
+
+            // Добавляем панель с графиком в окно
+            chartFrame.add(chartExample.createChartPanel());
+
+            chartFrame.pack();
+            chartFrame.setLocationRelativeTo(null);
+            chartFrame.setVisible(true);
+        });
+        return showPlotButton;
+    }
+
     private void startDichotomy() {
         try {
             double initialA = Double.parseDouble(fieldA.getText());
             double initialB = Double.parseDouble(fieldB.getText());
 
-            ResultOfDichotomy result = new ResultOfDichotomy();
+            ResultOfDichotomy result;
 
             result = calculator.initialSetup(initialA, initialB, eps);
             updateFields();
@@ -151,12 +154,10 @@ public class DichotomyForm extends JFrame {
     }
 
     private String getIntermediateResults() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("a = ").append(calculator.getA()).append("\n");
-        sb.append("x1 = ").append(calculator.getX1()).append("\n");
-        sb.append("x2 = ").append(calculator.getX2()).append("\n");
-        sb.append("b = ").append(calculator.getB()).append("\n");
-        return sb.toString();
+        return "a = " + calculator.getA() + "\n" +
+                "x1 = " + calculator.getX1() + "\n" +
+                "x2 = " + calculator.getX2() + "\n" +
+                "b = " + calculator.getB() + "\n";
     }
 
     public static void setUIFont(FontUIResource f) {

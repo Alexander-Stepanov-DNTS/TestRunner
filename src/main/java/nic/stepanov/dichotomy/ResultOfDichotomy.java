@@ -5,10 +5,7 @@ public class ResultOfDichotomy {
     private double b;
     private double x1;
     private double x2;
-    private double eps;
-
-    public ResultOfDichotomy() {
-    }
+    private final double eps;
 
     public ResultOfDichotomy(double a, double b, double x1, double x2, double eps) {
         this.a = a;

@@ -87,8 +87,4 @@ public class DichotomyCalculator {
     public double getEps() {
         return result.getEps();
     }
-
-    public ResultOfDichotomy getResult() {
-        return result;
-    }
 }

@@ -13,9 +13,7 @@ public class Test2 implements ITest {
                     "Тест \"проверка шага дихотомии\".\n",
                     "Тест шаг дихотомии",
                     JOptionPane.INFORMATION_MESSAGE);
-        }
 
-        if (!manyTests) {
             JOptionPane.showMessageDialog(null,
                     "Будет выполнена установка начального значения.\n",
                     "Установка начального значения",
@@ -31,8 +29,7 @@ public class Test2 implements ITest {
                             "eps = " + 0.1,
                     "Инициализация дихотомии",
                     JOptionPane.INFORMATION_MESSAGE);
-        }
-        if (!manyTests) {
+
             JOptionPane.showMessageDialog(null,
                     "\"Сейчас будет выполнен шаг дихотомии.\nРассчитаются значения x1 и x2 в интервале [A, B].\"",
                     "Запуск дихотомии",
